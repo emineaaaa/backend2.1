@@ -26,7 +26,7 @@ var venue=new mongoose.Schema({
     address:  String,
     rating:{type:Number,default: 0,min:0,max:5,default:0},
     foodanddrrink:[String],
-    coordinates:{type:Number,index:"2dsphere"},
+    coordinates:{type:[Number],index:"2dsphere"},
     hours:[hour],
     comments:[comment]
 
